@@ -1,0 +1,9 @@
+agent:
+  name: investment_thesis
+  type: Single agent task
+  tasks:
+    - task_name: get investment thesis
+      steps:
+        - step_number: 1
+          prompt: >
+            "Summarize the investment thesis of the company, including the company's competitive advantage, the company's growth potential, the company's valuation, and the company's risks."

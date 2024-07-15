@@ -1,0 +1,15 @@
+agent:
+  name: buisness_model
+  type: Single agent task
+  tasks:
+    - task_name: get business model
+      steps:
+        - step_number: 1
+          prompt: >
+            "Please get the business model of the company, including the business model canvas, the business model innovation, and the business model transformation.
+            I can gives you some supplementary information, combined with your information."
+          tool:
+            name: search
+            action: google_search
+            settings:
+              prompt: search the business model of the nvidia
