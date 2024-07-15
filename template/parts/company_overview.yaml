@@ -1,0 +1,15 @@
+agent:
+  name: company_overview
+  type: Single agent task
+  tasks:
+    - task_name: get company overview
+      steps:
+        - step_number: 1
+          prompt: >
+            "Please get the basic information of the company, including the company's history, the company's business model, the company's products and services, the company's financial performance, and the company's market position.
+            I can gives you some supplementary information, combined with your information."
+          tool:
+            name: search
+            action: google_search
+            settings:
+              prompt: search the business model of the nvidia company
